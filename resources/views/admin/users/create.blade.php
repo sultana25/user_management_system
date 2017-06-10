@@ -4,7 +4,8 @@
 @section('content')
 
     <h1>Create User</h1>
-    {!!Form::open(['method'=>'POST','action'=>'AdminUsersController@store'])!!}
+     @include('includes.form_errors')
+    {!!Form::open(['method'=>'POST','action'=>'AdminUsersController@store','files'=>true])!!}
     <div class="form-group">
         {!!Form::label('name','Name:')!!}
         {!!Form::text('name',null,['class'=>'form-control'])!!}
@@ -22,7 +23,12 @@
     </div>
      <div class="form-group">
         {!!Form::label('status','Status:')!!}
-        {!!Form::select('status',array(1=>'Active',0=>'Not active'),0,['class'=>'form-control'])!!}
+        {!!Form::select('status',[1=>'Active',0=>'Not active'],0,['class'=>'form-control'])!!}
+        
+    </div>
+    <div class="form-group">
+        {!!Form::label('file','Photo:')!!}
+        {!!Form::file('file',null,['class'=>'form-control'])!!}
         
     </div>
     <div class="form-group">
@@ -34,5 +40,12 @@
     <div class="form-group">
         {!!Form::submit('Create Post',['class'=>'btn btn-primary'])!!}
     </div>
+   
+    
     {!!Form::close()!!}
-@stop
+   
+    
+    
+
+
+ @stop
