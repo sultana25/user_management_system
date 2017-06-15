@@ -31,8 +31,11 @@
         <td>{{$user->created_at->diffForHumans()}}</td>
         <td>{{$user->updated_at->diffForHumans()}}</td>
       </tr>
+      
       @endforeach
       @endif
+   
+      
      
     </tbody>
   </table>

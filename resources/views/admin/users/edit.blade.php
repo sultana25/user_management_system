@@ -15,7 +15,7 @@
              <img  src="{{$user->photo?$user->photo->file:'http://placehold.it'}}" alt="" class="img-responsive img-rounded">
          </div>
 
-         <div class="com-sm-9">
+         <div class="col-sm-9">
             {!!Form::model($user,['method'=>'PATCH','action'=>['AdminUsersController@update',$user->id],'files'=>true])!!}
         <div class="form-group">
             {!!Form::label('name','Name:')!!}
@@ -54,6 +54,18 @@
 
 
         {!!Form::close()!!}
+        <div class="form-group">
+                {!!Form::open(['method'=>'DELETE','action'=>['AdminUsersController@destroy',$user->id],'files'=>true])!!}
+    
+
+        <div class="form-group">
+            {!!Form::submit('Delete',['class'=>'btn btn-danger'])!!}
+        </div>
+
+
+        {!!Form::close()!!}
+
+        </div>
        </div>
     </div>
     
