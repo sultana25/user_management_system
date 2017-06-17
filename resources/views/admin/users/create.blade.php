@@ -23,7 +23,7 @@
     </div>
      <div class="form-group">
         {!!Form::label('is_active','Status:')!!}
-        {!!Form::select('is_active',array(1=>'Active',0=>'Not active'),0,['class'=>'form-control'])!!}
+        {!!Form::select('is_active',array(1=>'Active',0=>'Not active'),null,['class'=>'form-control'])!!}
         
     </div>
     <div class="form-group">
