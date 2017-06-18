@@ -36,10 +36,7 @@ class LoginController extends Controller
     {
         $this->middleware('guest', ['except' => 'logout']);
     }
-    
-    
-    
-     /**
+      /**
 
     * Handle Social login request
 

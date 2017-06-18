@@ -184,11 +184,11 @@
                         <a href="#"><i class="fa fa-wrench fa-fw"></i>Categories<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="/categories">All Categories</a>
+                                <a href="{{route('categories.index')}}">All Categories</a>
                             </li>
 
                             <li>
-                                <a href="/categories/create">Create Category</a>
+                                <a href="{{route('categories.create')}}">Create Category</a>
                             </li>
 
                         </ul>
@@ -377,9 +377,9 @@
 <!-- /#wrapper -->
 
 <!-- jQuery -->
+<script src="{{asset('js/libs/jquery.js')}}"></script>
 <script src="{{asset('js/libs/bootstrap.js')}}"></script>
 <script src="{{asset('js/libs/bootstrap.min.js')}}"></script>
-<script src="{{asset('js/libs/jquery.js')}}"></script>
 <script src="{{asset('js/libs/metisMenu.js')}}"></script>
 <script src="{{asset('js/libs/sb-admin-2.js')}}"></script>
 <script src="{{asset('js/libs/scripts.js')}}"></script>
