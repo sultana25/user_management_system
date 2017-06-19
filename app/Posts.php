@@ -29,4 +29,9 @@ class Posts extends Model
     {
         return $this->belongsTo('App\Category');
     }
+    
+    public function commnents()
+    {
+        return $this->hasMany('App\Comment');
+    }
 }
