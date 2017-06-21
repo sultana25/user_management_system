@@ -31,6 +31,8 @@
                 <td>{{str_limit($post->body,3)}}</td>
                 <td>{{$post->created_at->diffForHumans()}}</td>
                 <td>{{$post->updated_at->diffForHumans()}}</td>
+                <td><a href="{{route('home.post',$post->id)}}">View Post</a></td>
+                <td><a href="{{route('comments.show',$post->id)}}">View Comment</a></td>
             </tr>
             
             
