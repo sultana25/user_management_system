@@ -79,7 +79,7 @@
 
         <ul class="nav navbar-top-links navbar-right">
 
-
+            
             <!-- /.dropdown -->
             <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
@@ -97,9 +97,15 @@
                 <!-- /.dropdown-user -->
             </li>
             <!-- /.dropdown -->
-
+            
+            
+             <li>{{ Auth::user()->name }}</li>
+            
 
         </ul>
+        
+        
+         
 
 
 
