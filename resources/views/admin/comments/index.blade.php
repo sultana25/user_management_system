@@ -27,7 +27,7 @@
                 <td><a href="{{route('home.post',$comment->post->id)}}">View Post</a></td>
                 <td><a href="{{route('replies.show',$comment->id)}}">View replies</a></td>
                 <td>
-                   @if($comment->is_active)
+                   @if($comment->is_active == 1)
                     {!!Form::open(['method'=>'PATCH','action'=>['PostCommentsController@update',$comment->id]])!!}
                     <input type="hidden" name="is_active" value="0">
                     <div class="form-group">

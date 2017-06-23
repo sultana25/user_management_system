@@ -23,7 +23,7 @@
                 <td>{{$comment->id}}</td>
                 <td>{{$comment->author}}</td>
                 <td>{{$comment->email}}</td>
-                <td>{{$comment->body}}</td>
+                <td>{{str_limit($comment->body, 40)}}</td>
                 <td><a href="{{route('home.post',$comment->post->id)}}">View Post</a></td>
                 <td>
                    @if($comment->is_active)
