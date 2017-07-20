@@ -1,40 +1,53 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+# user-content-management-system
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+User Management System, Content Management System &amp; Admin panel with Laravel 
 
-## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+### Installation ###
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+* `git clone https://github.com/bestmomo/laravel5-example.git projectname`
+* `cd projectname`
+* `composer install`
+* `php artisan key:generate`
+* Create a database and inform *.env*
+* `php artisan migrate --seed` to create and populate tables
+* Inform *config/mail.php* for email sends
+* `php artisan vendor:publish` to publish filemanager
+* `php artisan serve` to start the app on http://localhost:8000/
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb combination of simplicity, elegance, and innovation give you tools you need to build any application with which you are tasked.
+### Include & Run ###
+ 
+ * Include [Node js](https://www.nodejs.org/en/download/)
+ * Run `npm install` In your project
+ * Run `npm run dev`
+ * Include [Highlight.js](https://highlightjs.org) for highlighting code
+ * [CKEditor](http://ckeditor.com) the great editor
+ * [Filemanager](https://github.com/simogeo/Filemanager) the easy file manager
+ 
+ 
+ ### Features ###
 
-## Learning Laravel
+* Home page
+* Custom Error Page 404
+* Admin (Create users)
+* Authentication (registration, login, logout, password reset, mail confirmation, throttle)
+* Users roles : update user profiles, redactor (create and edit post, upload and use medias in personnal directory), and user (create comment in blog)
+* Blog with comments
+* Search in posts
+* Tags on posts
+* Contact us page
+* Admin dashboard with new messages, users, posts and comments
+* Users admin (roles filter, show, edit, delete, create)
+* Messages admin
+* Posts admin (list with dynamic order, show, edit, delete, create)
+* Medias gestion
 
-Laravel has the most extensive and thorough documentation and video tutorial library of any modern web application framework. The [Laravel documentation](https://laravel.com/docs) is thorough, complete, and makes it a breeze to get started learning the framework.
+### Packages included ###
 
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 900 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+* laravelcollective/html
+* bestmomo/filemanager
+* Localisation
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+ Licensed under the [MIT license](http://opensource.org/licenses/MIT).
